@@ -1,5 +1,42 @@
 # AI_classification
 
+
+This repository contains the code and documentation for a machine learning classification project. The project is divided into two phases.
+
+Phase 1
+a. Feature Calculation and Normalization
+Calculate a set of features for different channels of training data. Normalize the feature matrix.
+b. Feature Selection
+Select the top features based on a chosen metric, such as scatter matrix-based metrics or any other suitable metric.
+c. MLP Network Design and Training
+Design a Multilayer Perceptron (MLP) network and train it using different feature sets.
+Calculate the average accuracy of the classifier using 5-fold cross-validation.
+Experiment with different network architectures, including the number of layers, neurons per layer, activation functions, and feature subsets.
+d. RBF Network Design and Training
+Repeat the process for a Radial Basis Function (RBF) network.
+e. Results and Reporting
+Create a comprehensive report summarizing the results of each part.
+Present the best-designed MLP and RBF networks and the selected optimal features.
+Compare the results of parts (c) and (d).
+Phase 2
+Feature Selection Using Evolutionary Algorithms
+Utilize evolutionary algorithms or swarm intelligence algorithms for feature selection from the extracted features.
+Define an appropriate fitness function, considering criteria such as scatter matrices in higher dimensions, classification accuracy, or other suitable metrics.
+Re-train the MLP and RBF classifiers using the selected features.
+Apply the trained networks to test data to determine class labels.
+Feel free to explore and adapt the provided code and algorithms for feature selection, classifier design, and evaluation. Create a comprehensive report summarizing the results and performance of your designed classifiers in both phases.
+
+
+
+
+
+
+
+
+
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
