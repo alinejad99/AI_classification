@@ -43,23 +43,19 @@ import scipy
 import tensorflow as tf
 import random
 import sys
-
-#from pyeasyga import pyeasyga
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from seaborn import heatmap
-
 from tensorflow.keras.layers import Input, Dense, Activation, Softmax
 from tensorflow.keras.utils import to_categorical
 from tensorflow import keras
 from tensorflow.keras.callbacks import EarlyStopping
-
 from scipy.io import loadmat
 from scipy.signal import butter, lfilter , freqz
 from scipy import stats
 
-data = loadmat("/content/drive/MyDrive/Colab Notebooks/CI/All_data.mat");
+data = loadmat("All_data.mat");
 data.keys()
 
 """##**(A)**
